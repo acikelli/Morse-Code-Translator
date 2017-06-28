@@ -72,7 +72,7 @@ namespace Treehouse
       
       static MorseCodeTranslator()
       { 
-        foreach(KeyValuePair<char,string> code in _textToMorse)
+        foreach(var code in _textToMorse)
         {
             _morseToText.Add(code.Value, code.Key);
         }
